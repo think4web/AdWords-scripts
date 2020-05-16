@@ -48,7 +48,7 @@
  */
 
   // The account name will be displayed in the subject line
- var account_name = '(enviroflute.com)';
+ var account_name = 'YOUR_ACCOUNT_NAME';
 
 var CONFIG = {
   // URL of the spreadsheet template.
