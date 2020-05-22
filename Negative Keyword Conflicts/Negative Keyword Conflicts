@@ -12,6 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// Modification: the name of the Google Ads account will be added to the subject of the letter
+
 /**
  * @name Negative Keyword Conflicts
  *
@@ -47,9 +49,6 @@
  *   - Released initial version.
  */
 
-  // The account name will be displayed in the subject line
- var account_name = 'YOUR_ACCOUNT_NAME';
-
 var CONFIG = {
   // URL of the spreadsheet template.
   // This should be a copy of https://goo.gl/yNwOIV.
@@ -72,6 +71,8 @@ var CONFIG = {
   MAX_POSITIVES: 250000,
   MAX_NEGATIVES: 50000
 };
+
+var account_name = AdsApp.currentAccount().getName();
 
 /**
  * Configuration to be used for running reports.
